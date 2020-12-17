@@ -21,7 +21,7 @@ const GymAddScreen = ({ history }) => {
   const dispatch = useDispatch()
 
   const gymCreate = useSelector((state) => state.gymCreate)
-  const { gym, success, error, loading } = gymCreate
+  const { success, error, loading } = gymCreate
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -35,7 +35,7 @@ const GymAddScreen = ({ history }) => {
     if (success) {
       history.push('/manage-gyms')
     }
-  }, [success, history])
+  }, [success, userInfo, history])
 
   const uploadFileHandler = async (e) => {
     const file = e.target.files[0]
@@ -191,7 +191,7 @@ const GymAddScreen = ({ history }) => {
                     <div className='mb-4'>
                       {image && (
                         <>
-                          <img src={image} className='gym-image' />
+                          <img src={image} className='gym-image' alt='gym' />
                         </>
                       )}
                       <div className='form-group mt-2'>

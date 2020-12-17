@@ -40,7 +40,7 @@ const Header = () => {
                   <li className='nav-item dropdown'>
                     <a
                       className='nav-link dropdown-toggle'
-                      href='#'
+                      href='#!'
                       id='navbarDropdown'
                       role='button'
                       data-toggle='dropdown'
@@ -57,7 +57,11 @@ const Header = () => {
                             Manage Account
                           </Link>
                           <div className='dropdown-divider'></div>
-                          <a className='dropdown-item' onClick={logoutHandler}>
+                          <a
+                            href='#!'
+                            className='dropdown-item'
+                            onClick={logoutHandler}
+                          >
                             <i className='fas fa-sign-out-alt'></i> Logout
                           </a>
                         </>
@@ -67,7 +71,11 @@ const Header = () => {
                             Manage Account
                           </Link>
                           <div className='dropdown-divider'></div>
-                          <a className='dropdown-item' onClick={logoutHandler}>
+                          <a
+                            href='#!'
+                            className='dropdown-item'
+                            onClick={logoutHandler}
+                          >
                             <i className='fas fa-sign-out-alt'></i> Logout
                           </a>
                         </>
@@ -75,7 +83,7 @@ const Header = () => {
                     </div>
                   </li>
                   <li className='nav-item d-none d-md-block'>
-                    <a className='nav-link' href='#'>
+                    <a href='#!' className='nav-link'>
                       |
                     </a>
                   </li>
@@ -95,7 +103,7 @@ const Header = () => {
                   <li className='nav-item dropdown'>
                     <a
                       className='nav-link dropdown-toggle'
-                      href='#'
+                      href='#!'
                       id='navbarDropdown'
                       role='button'
                       data-toggle='dropdown'
@@ -111,14 +119,18 @@ const Header = () => {
                           Users
                         </Link>
                         <div className='dropdown-divider'></div>
-                        <a className='dropdown-item' onClick={logoutHandler}>
+                        <a
+                          href='#!'
+                          className='dropdown-item'
+                          onClick={logoutHandler}
+                        >
                           <i className='fas fa-sign-out-alt'></i> Logout
                         </a>
                       </>
                     </div>
                   </li>
                   <li className='nav-item d-none d-md-block'>
-                    <a className='nav-link' href='#'>
+                    <a className='nav-link' href='#!'>
                       |
                     </a>
                   </li>
@@ -141,7 +153,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className='nav-item d-none d-md-block'>
-                    <a className='nav-link' href='#'>
+                    <a className='nav-link' href='#!'>
                       |
                     </a>
                   </li>

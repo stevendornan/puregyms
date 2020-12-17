@@ -4,11 +4,9 @@ import {
   REVIEW_CREATE_REQUEST,
   REVIEW_CREATE_SUCCESS,
   REVIEW_CREATE_FAIL,
-  REVIEW_CREATE_RESET,
   REVIEW_LIST_REQUEST,
   REVIEW_LIST_SUCCESS,
   REVIEW_LIST_FAIL,
-  REVIEW_LIST_RESET,
 } from '../constants/reviewConstants'
 import { logout } from './userActions'
 

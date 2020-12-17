@@ -11,7 +11,7 @@ const ManageGymScreen = ({ history }) => {
   const dispatch = useDispatch()
 
   const userDetails = useSelector((state) => state.userDetails)
-  const { loading, error, user } = userDetails
+  const { error } = userDetails
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -20,19 +20,10 @@ const ManageGymScreen = ({ history }) => {
   const { loading: loadingGyms, error: errorGyms, gyms } = gymListMy
 
   const gymDelete = useSelector((state) => state.gymDelete)
-  const {
-    loading: loadingDelete,
-    error: errorDelete,
-    success: successDelete,
-  } = gymDelete
+  const { success: successDelete } = gymDelete
 
   const gymCreate = useSelector((state) => state.gymCreate)
-  const {
-    loading: loadingCreate,
-    error: errorCreate,
-    success: successCreate,
-    gym: createdGym,
-  } = gymCreate
+  const { success: successCreate, gym: createdGym } = gymCreate
 
   useEffect(() => {
     dispatch({ type: GYM_CREATE_RESET })

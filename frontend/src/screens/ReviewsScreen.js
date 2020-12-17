@@ -25,7 +25,7 @@ const ReviewsScreen = ({ match }) => {
       dispatch(listGymDetails(gymId))
     }
     dispatch(listReviews(gymId))
-  }, [dispatch, gymId])
+  }, [dispatch, gym, gymId])
 
   return (
     <section className='bootcamp mt-5'>

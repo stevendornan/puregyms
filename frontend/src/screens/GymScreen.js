@@ -20,7 +20,7 @@ const GymScreen = ({ match }) => {
     if (!gym.name || gym._id !== gymId) {
       dispatch(listGymDetails(gymId))
     }
-  }, [dispatch, gymId])
+  }, [dispatch, gymId, gym])
 
   return (
     <section className='bootcamp mt-5'>

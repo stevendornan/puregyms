@@ -45,7 +45,7 @@ const ReviewAddScreen = ({ match, history }) => {
       dispatch(listGymDetails(gymId))
       dispatch({ type: REVIEW_CREATE_RESET })
     }
-  }, [dispatch, gymId, errorReview, successReview])
+  }, [dispatch, gymId, gym, history, userInfo, errorReview, successReview])
 
   const submitHandler = (e) => {
     e.preventDefault()

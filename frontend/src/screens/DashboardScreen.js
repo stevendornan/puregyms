@@ -8,9 +8,6 @@ import { getUserDetails, deleteUser, logout } from '../actions/userActions'
 const DashboardScreen = ({ history }) => {
   const dispatch = useDispatch()
 
-  const gymListMy = useSelector((state) => state.gymListMy)
-  const { loading: gymListLoading, error: gymListError, gyms } = gymListMy
-
   const userDetails = useSelector((state) => state.userDetails)
   const { user, loading, error } = userDetails
 

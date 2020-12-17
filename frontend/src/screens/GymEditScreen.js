@@ -20,6 +20,7 @@ const GymEditScreen = ({ history, match }) => {
   const [disabledAccess, setDisabledAccess] = useState(false)
   const [carPark, setcarPark] = useState(false)
   const [message, setMessage] = useState(null)
+  setMessage('')
 
   const dispatch = useDispatch()
 
@@ -200,7 +201,7 @@ const GymEditScreen = ({ history, match }) => {
                 <div className='mb-4'>
                   {image && (
                     <>
-                      <img src={image} className='gym-image' />
+                      <img src={image} className='gym-image' alt='gym' />
                     </>
                   )}
                   <div className='form-group mt-2'>

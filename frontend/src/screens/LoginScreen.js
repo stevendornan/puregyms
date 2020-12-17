@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/layout/Message'
 import Loader from '../components/layout/Loader'
 import { login } from '../actions/userActions'
-import { USER_LOGIN_FAIL } from '../constants/userConstants'
 
 const LoginScreen = ({ history }) => {
   const [email, setEmail] = useState('')
